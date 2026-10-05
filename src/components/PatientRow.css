@@ -1,0 +1,28 @@
+.patient_rows {
+  /* background-color: red; */
+  display: flex;
+  height: 10%;
+  border-radius: 15px;
+ 
+  
+}
+.section{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: beige; */
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  font-family: cursive;
+
+
+}
+.edit {
+  border-radius: 5px;
+  height: 50%;
+  width: 50%;
+  background-color: bisque;
+  font-size: 1rem;
+}

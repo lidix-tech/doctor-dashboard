@@ -1,0 +1,126 @@
+.outer{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../assets/medical.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-width: 600px;
+    /* min-height: 1600px; */
+}
+.dashboard_Container{
+    width: 90vw;
+    height: 90vh;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    min-width: 560px;
+    min-height: 500px;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 15px;
+}
+.Header_part{
+    display: flex;
+    
+}
+.part1{
+    /* background-color: aqua; */
+    width:100%;
+    
+}
+.part1 h2{
+    /* background-color: blue; */
+    margin: 0;
+    margin-top: 10px;
+}
+.part1 p{
+    /* background-color: aqua; */
+}
+.part2{
+    /* background-color: blue; */
+    width: 100%;
+    padding: 25px;
+}
+.part2 button{
+    border-radius: 5px;
+    background-color: antiquewhite;
+    color:black;
+    font-family: fantasy;
+    width: 70px;
+    height: 50px;
+    float:right;
+}
+.Logout{
+    margin-right: 10px;
+}
+.Table_Container{
+    height: 80%;
+    /* background-color: aqua; */
+}
+.Table_Header{
+    height: 10%;
+    border-radius: 15px;
+    /* background-color: blue; */
+    margin-right: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(15px);
+    display: flex;
+}
+.sections{
+    font-family: cursive;
+    font-size: 0.9rem;
+    display: flex;
+    width:20%;
+    height: 100%;
+    margin: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blueviolet; */
+}
+.Row_Container{
+    height: 90%;
+    /* background-color: black; */
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Custom scrollbar styles */
+.Row_Container::-webkit-scrollbar {
+width: 12px; /* Width of the scrollbar */
+}
+
+.Row_Container::-webkit-scrollbar-track {
+background: #e0e0e0; /* Track color */
+border-radius: 10px;
+}
+
+.Row_Container::-webkit-scrollbar-thumb {
+background: #888; /* Handle color */
+border-radius: 10px;
+}
+
+.Row_Container::-webkit-scrollbar-thumb:hover {
+background: #555; /* Handle color on hover */
+}
+
+@media (max-width: 570px) {
+    *{
+        /* be responsive shi mannn */
+        /* add remove button */
+    }
+}

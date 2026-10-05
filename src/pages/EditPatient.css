@@ -1,0 +1,127 @@
+* {
+  font-family: cursive;
+}
+
+.OuterEditPatientContainer {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../assets/medical.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 300px;
+}
+.EditPatientContainer {
+  width: 80vw;
+  height: 80vh;
+
+  max-width: 700px;
+  max-height: 600px;
+
+  min-width: 350px;
+  min-height: 500px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  padding: 15px;
+}
+.HeaderPart {
+  margin: 0;
+  display: flex;
+  /* background-color: aqua; */
+  /* background-color: aqua; */
+}
+.HeaderPart h1 {
+  margin: 0;
+}
+.HeaderPart p {
+  margin: 0;
+}
+.EnterData {
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.EnterData label {
+  font-size: 1.25rem;
+}
+.EnterPrescriptionData {
+  width: 100%;
+  min-height: 100px;
+  border-radius: 10px;
+}
+.EnterExcerciseData {
+  width: 100%;
+  min-height: 100px;
+  border-radius: 10px;
+}
+.EnterFollowUpDate {
+  /* background-color: blue; */
+  width: 100%;
+  min-height: 50px;
+  border-radius: 10px;
+}
+.FollowUpDate{
+  /* background-color: red; */
+}
+.ButtonSection {
+  display: flex;
+  width: 100%;
+  /* align-items: center; */
+  margin-top: 10px;
+  justify-content: space-between;
+}
+.SaveChange {
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: beige;
+  /* width: 40%;
+  margin-right: 40%;
+  margin-top: 130px;  */
+  /*this is temp it makes no sense*/
+
+}
+.Cancel {
+  font-size: 1.5rem;
+  border-radius: 10px;
+  background-color: beige;
+  /* width: 20%; */
+  /* margin-left: auto; */
+}
+
+/* .SaveChange,
+.Cancel {
+  flex: 1;
+} */
+.Delete {
+  
+  font-size: 1.25rem;
+  border-radius: 10px;
+  background-color: beige;
+  /* margin-left: 100px;
+  margin-top: 15px; */
+  width: 60%;
+  margin-left: 40%;
+  /* margin-top: 0%; */
+}
+.DeleteButtonContainer{
+  /* background-color: red; */
+  width: 40%;
+  margin-left: 20%;
+}
+.test{
+  /* background-color: blue; */
+  width: 40%;
+}
+

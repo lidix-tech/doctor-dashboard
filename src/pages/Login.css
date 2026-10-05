@@ -1,0 +1,118 @@
+* {
+  font-family: cursive;
+}
+
+.OuterLoginContainer {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("../assets/medical.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.LoginContainer {
+  width: 50vw;
+  height: 80vh;
+
+  max-width: 700px;
+  max-height: 500px;
+
+  min-width: 350px;
+  min-height: 500px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  padding: 15px;
+}
+.MainHeader {
+  margin: 0 0 0 0;
+  margin-top: 3%;
+}
+h3 {
+  margin: 0 0 0 0;
+  margin-bottom: 5%;
+  font-size: 0.8rem;
+}
+.AppWords {
+  background-color: rgb(205, 205, 171);
+  border-color: beige;
+  border-style: double;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 15px;
+  text-align: center;
+  color: black;
+  padding: 7px;
+  margin-bottom: 10px;
+}
+.AppWords h5 {
+  margin: 0;
+}
+.AppWords p {
+  margin: 2px 0 0 0;
+}
+
+.inputs {
+  border-color: beige;
+  border-radius: 7px;
+  width: 70%;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 2%;
+}
+#doc,
+#otp {
+  width: 100%;
+}
+.otp_button {
+  border-radius: 5px;
+  height: 30px;
+  width: 25%;
+  background-color: beige;
+  transition: all 0.2s ease;
+  color: black;
+  font-size: 1rem;
+  font-family: cursive;
+}
+.otp_button:hover {
+  background-color: beige;
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.LoginButton {
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 10px;
+  padding: 2%;
+  background-color: beige;
+  transition: all 0.2s ease;
+}
+.LoginButton:hover {
+  background-color: beige;
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 350px) {
+  /* fix for devices like small phones */
+
+  .OuterLoginContainer{
+    
+  }
+
+  .LoginContainer{
+    height: 500px;
+    width: 100px;
+  }
+}

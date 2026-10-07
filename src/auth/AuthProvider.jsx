@@ -1,7 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 
 const AuthContext = createContext();
-const API_URL = "http://localhost:5000";
+const API_URL = "https://doctor-dashboard-n5qi.onrender.com";
 
 function AuthProvider({ children }) {
   const [accessToken, setAccessToken] = useState(null);
@@ -48,7 +48,7 @@ function AuthProvider({ children }) {
 
   async function refreshAccessToken() {
     try {
-      const response = await fetch("http://localhost:5000/auth/refresh", {
+      const response = await fetch(API_URL + "/auth/refresh", {
         method: "POST",
         credentials: "include",
       });
@@ -90,7 +90,7 @@ function AuthProvider({ children }) {
 
   async function logout() {
     try {
-      await fetch("http://localhost:5000/auth/logout", {
+      await fetch(API_URL + "/auth/logout", {
         method: "POST",
         credentials: "include",
       });

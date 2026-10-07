@@ -58,15 +58,18 @@ function Login() {
 
     try {
       //send a HTTP request to my Express back at this URL
-      const response = await fetch("http://localhost:5000/auth/send-otp", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const response = await fetch(
+        "https://doctor-dashboard-n5qi.onrender.com/auth/send-otp",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            phone_number: phoneNumber,
+          }),
         },
-        body: JSON.stringify({
-          phone_number: phoneNumber,
-        }),
-      });
+      );
 
       //wait for the fetch operation to complete before going to the next line
       // const data = await response.json();
@@ -86,18 +89,21 @@ function Login() {
     event.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/auth/login", {
-        method: "POST",
-        credentials: "include",
-        headers: {
-          "Content-Type": "application/json",
+      const response = await fetch(
+        "https://doctor-dashboard-n5qi.onrender.com/auth/login",
+        {
+          method: "POST",
+          credentials: "include",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            phone_number: phoneNumber,
+            otp: otp,
+            registration_number: registrationNumber,
+          }),
         },
-        body: JSON.stringify({
-          phone_number: phoneNumber,
-          otp: otp,
-          registration_number: registrationNumber,
-        }),
-      });
+      );
 
       const data = await response.json();
       // console.log(data);

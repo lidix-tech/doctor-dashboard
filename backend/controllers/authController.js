@@ -159,8 +159,8 @@ export async function login(req, res) {
     // Put the actual refresh token in an HttpOnly cookie
     res.cookie("refreshToken", refreshToken, {
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
+      secure: true,
+      sameSite: "none",
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
@@ -283,8 +283,8 @@ export async function logout(req, res) {
     //remove the token from the browser by emptying the cookie
     res.clearCookie("refreshToken", {
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
+      secure: true,
+      sameSite: "none",
     });
 
     return res.json({ message: "Logout complete" });
@@ -295,8 +295,8 @@ export async function logout(req, res) {
     // remove the browser cookie
     res.clearCookie("refreshToken", {
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
+      secure: true,
+      sameSite: "none",
     });
 
     return res.json({

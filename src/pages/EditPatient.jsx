@@ -112,69 +112,72 @@ function EditPatient() {
             <p>Patient since placeholder date</p>
           </div>
           <div className="DeleteButtonContainer">
-            <button className="Delete" onClick={handleDeletePatient}>
+            <button
+              className="Delete"
+              type="button"
+              onClick={handleDeletePatient}
+            >
               Delete Patient
             </button>
           </div>
         </div>
-        <form>
-          <div className="EnterData">
-            <div className="PrescriptionData">
-              <label>Today's Prescription</label>
-              <br />
-              <input
-                className="EnterPrescriptionData"
-                type="text"
-                value={prescription}
-                onChange={(e) => setPrescription(e.target.value)}
-                placeholder="Enter medicines"
-              />
-            </div>
-            <div className="ExcerciseData">
-              <label>Today's Excercise</label>
-              <br />
-              <input
-                className="EnterExcerciseData"
-                type="text"
-                value={exercise}
-                onChange={(e) => setExercise(e.target.value)}
-                placeholder="Enter exercises"
-              />
-            </div>
-            <div className="FollowUpDate">
-              <label>Next Follow-up Date</label>
-              <br />
-              <input
-                className="EnterFollowUpDate"
-                type="date"
-                value={followUpDate}
-                onChange={(e) => setFollowUpDate(e.target.value)}
-              />
-            </div>
+        <div className="EnterData">
+          <div className="PrescriptionData">
+            <label>Today's Prescription</label>
+            <br />
+            <input
+              className="EnterPrescriptionData"
+              type="text"
+              value={prescription}
+              onChange={(e) => setPrescription(e.target.value)}
+              placeholder="Enter medicines"
+            />
           </div>
+          <div className="ExcerciseData">
+            <label>Today's Excercise</label>
+            <br />
+            <input
+              className="EnterExcerciseData"
+              type="text"
+              value={exercise}
+              onChange={(e) => setExercise(e.target.value)}
+              placeholder="Enter exercises"
+            />
+          </div>
+          <div className="FollowUpDate">
+            <label>Next Follow-up Date</label>
+            <br />
+            <input
+              className="EnterFollowUpDate"
+              type="date"
+              value={followUpDate}
+              onChange={(e) => setFollowUpDate(e.target.value)}
+            />
+          </div>
+        </div>
 
-          <div className="ButtonSection">
-            <div>
-              <button
-                className="SaveChange"
-                type="button"
-                onClick={handleSaveChanges}
-              >
-                Save Changes
-              </button>
-            </div>
-            <div>
-              <button
-                className="Cancel"
-                onClick={() => {
-                  navigate("/dashboard");
-                }}
-              >
-                Cancel
-              </button>
-            </div>
+        <div className="ButtonSection">
+          <div>
+            <button
+              className="SaveChange"
+              type="button"
+              onClick={handleSaveChanges}
+            >
+              Save Changes
+            </button>
           </div>
-        </form>
+          <div>
+            <button
+              className="Cancel"
+              type="button"
+              onClick={() => {
+                navigate("/dashboard");
+              }}
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
